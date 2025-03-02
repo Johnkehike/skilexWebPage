@@ -590,28 +590,24 @@ position: relative;
     cursor: pointer;
 }
 
-/* For WebKit Browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 5px; /* Makes scrollbar tiny */
-    height: 5px; /* For horizontal scrollbars */
+
+.testimonial::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px; 
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent thumb */
-    border-radius: 10px; /* Rounded edges */
+.testimonial::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
 }
 
-::-webkit-scrollbar-track {
+.testimonial::-webkit-scrollbar-track {
     background: transparent; 
 }
 
 .testimonial {
     scrollbar-width: thin; 
     scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
-}
-
-.testimonial:hover {
-    scrollbar-width: auto; 
 }
 
 .testimonial::-webkit-scrollbar {
