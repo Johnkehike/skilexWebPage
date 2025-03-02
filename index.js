@@ -1,5 +1,4 @@
-// const express = require('express');
-// const router = express.Router();
+
 
 
 import { courses } from "./courses.js";
@@ -32,9 +31,7 @@ itemContainerTwo.addEventListener('mouseenter', () => {
     itemContainerTwo.style.flex = 1;
     itemContainerThree.style.width = "16.916%";
 
-    // itemContainerOne.style.width = '20%';
-    // itemContainerTwo.style.width = '40%';
-    // itemContainerThree.style.width = '20%';
+ 
 
     largeOverlayOne.classList.remove('large-overlay-one');
     largeOverlayOne.classList.add('large-overlay-one-hide');
@@ -58,10 +55,6 @@ itemContainerTwo.addEventListener('mouseleave', () => {
     groupTwo.style.width = "";
     itemContainerTwo.style.flex = '';
     itemContainerThree.style.width = "";
-
-    // itemContainerOne.style.width = '';
-    // itemContainerTwo.style.width = '';
-    // itemContainerThree.style.width = '';
 
     largeOverlayOne.classList.remove('large-overlay-one-hide');
     largeOverlayOne.classList.add('large-overlay-one');
@@ -87,9 +80,6 @@ itemContainerThree.addEventListener('mouseenter', () => {
     groupTwo.style.width = "84.509%";
     itemContainerThree.style.flex = 1;
     itemContainerTwo.style.width = "16.916%";
-    // itemContainerOne.style.width = '20%';
-    // itemContainerTwo.style.width = '20%';
-    // itemContainerThree.style.width = '40%';
 
     largeOverlayOne.classList.remove('large-overlay-one');
     largeOverlayOne.classList.add('large-overlay-one-hide');
@@ -121,9 +111,7 @@ itemContainerThree.addEventListener('mouseleave', () => {
     itemContainerThree.style.width = "16.916%";
 
 
-    // itemContainerOne.style.width = '';
-    // itemContainerTwo.style.width = '';
-    // itemContainerThree.style.width = '';
+ 
 
     largeOverlayOne.classList.remove('large-overlay-one-hide');
     largeOverlayOne.classList.add('large-overlay-one');
@@ -148,46 +136,3 @@ scrollFn();
 courses(myData);
 //
 search(myData);
-
-// let buttons = document.querySelectorAll('.a-item');
-// let firstButton = document.getElementById('first-a-item');
-
-// firstButton.addEventListener('click', () => {
-//     firstButton.classList.remove('a-item');
-//     firstButton.classList.add('selected-item');
-//     buttons.forEach((item) => {
-//         item.classList.remove('selected-item');
-//         item.classList.add('a-item');
-//     });
-//     courses(myData);
-// })
-//filter
-// buttons.forEach((button, index) => {
-//     button.addEventListener('click', () => {
-   
-//         const subText = button.getAttribute('data-filter');
-//         console.log(subText);
-        
-
-//         if (subText === 'all') {
-//             courses(myData);
-            
-            
-//         }else{
-//             const itemsFiltered = myData.filter(item => item.tag === subText);
-//             courses(itemsFiltered);
-            
-//             firstButton.classList.remove('selected-item');
-//             firstButton.classList.add('a-item');
-//             buttons.forEach((item) => {
-//                 item.classList.remove('selected-item');
-//                 item.classList.add('a-item');
-//                 button.classList.remove('a-item');
-//                 button.classList.add('selected-item');
-                
-//             });
-            
-            
-//         }
-//     });
-// })
